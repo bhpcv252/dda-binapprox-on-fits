@@ -50,10 +50,7 @@ def median_approx_fits(imgs, B):
     return median
 
 
-# You can use this to test your function.
-# Any code inside this `if` statement will be ignored by the automarker.
 if __name__ == '__main__':
-    # Run your function with examples from the question.
     mean, std, left_bin, bins = median_bins_fits(['image{}.fits'.format(str(i)) for i in range(11)], 4)
     print(mean[100, 100], std[100, 100], left_bin[100, 100], bins[100, 100, :])
     median = median_approx_fits(['image{}.fits'.format(str(i)) for i in range(11)], 4)
